@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login Page</title>
+<script src="log1.js"></script>
+<style>
+
+
+
+.navbar { color: #555; display: flex;
+align-items: center;
+
+
+width:100%
+}
+
+
+nav {
+flex: 1;
+text-align: left;
+ 
+}
+
+
+.logo a img {
+border-radius: 17px;
+}
+
+
+nav ul {
+display: inline-block; list-style: none;
+}
+
+
+nav ul li {
+display: inline-block; margin-right: 20px;
+}
+
+
+a {
+font-size:x-large;
+text-decoration: none; color: #555;
+color: rgb(242, 25, 25);
+}
+nav ul li a:hover { color: #151313; padding-right: 40px;
+}
+ 
+
+p {
+color: #555;
+}
+
+
+.container { width: 100%; margin: auto;
+
+}
+/*
+.row {
+display: flex;
+align-items: center; flex-wrap: wrap;
+justify-content: space-around;
+}
+*/
+.col-2 {
+flex-basis: 50%; min-width: 300px;
+}
+
+
+.col-2 img {
+max-width: 100%;
+padding: 50px 0;
+}
+ 
+
+.col-2 h1 {
+font-size: 50px; line-height: 60px; margin: 25px 0;
+}
+
+
+.btn {
+display: inline-block; background: #ff523b; color: #fff;
+padding: 8px 30px; margin: 30px 0; border-radius: 30px; transition: 0.5s;
+}
+
+
+.btn:hover { background: #563434;
+}
+
+
+.header {
+background: #F9F3EE;
+}
+
+
+.header .row { margin-top: 70px;
+ 
+}
+.sign a img { width:50px; padding-right: 35px;
+}
+
+
+
+/* Start form attributes */ form {
+width: 500px;
+min-height: 500px; height: auto; border-radius: 5px; margin: 2% auto;
+background-image: linear-gradient(155deg, #0cc5b7 0%, #2bd891 100%);
+}
+.align{
+position: absolute; left: 300px;
+top: 210px;
+}
+
+
+/* form Container */
+.con {
+position: absolute; left: 85px;
+ 
+
+}
+
+
+/* the header form form */
+.head-form {
+margin: 2% auto 10% auto; text-align: center;
+}
+
+
+/* Login title form form */ h2 {
+font-size: 250%;
+font-family: 'Playfair Display', serif; color: #3e403f;
+}
+
+
+p {
+letter-spacing: 0.05em;
+}
+
+
+.input-item { background: #fff; color: #333;
+padding: 14.9px 0px 15px 9px; border-radius: 5px 0px 0px 5px;
+}
+ 
+/* Show/hide password Font Icon */ #eye {
+
+color: #333;
+margin: 5.9px 0 0 0; margin-left: -20px;
+padding: 15px 9px 19px 0px; border-radius: 0px 5px 5px 0px;
+
+
+float: right; position: relative; right: 1%;
+top: -.2%;
+z-index: 5; cursor: pointer;
+}
+
+
+/* inputs form */ input[class="form-input"] {
+width: 250px; height: 46.2px;
+box-sizing: border-box; margin-top: 2%; padding: 15px;
+font-size: 16px;
+font-family: 'Abel', sans-serif; color: #5E6472;
+ 
+outline: none; border: none;
+border-radius: 0px 5px 5px 0px; transition: 0.2s linear;
+
+
+}
+
+
+input[id="txt-input"] { width: 250px;
+
+
+
+}
+
+
+/* buttons */ button {
+display: inline-block; color: #252537;
+
+width: 280px; height: 50px;
+
+padding: 0 20px; background: #fff; border-radius: 5px;
+
+outline: none; border: none;
+ 
+
+cursor: pointer; text-align: center;
+transition: all 0.2s linear;
+
+
+margin: 7% auto; letter-spacing: 0.05em;
+}
+
+
+/* Submits */
+.submits { width: 48%;
+display: inline; float: left; margin-left: 2%;
+}
+
+
+/*	Forgot button	*/
+.frgt-pass {
+background-color: FAF3DD;
+}
+
+
+/*	Sign Up button */
+.sign-up {
+background: #279e6d;
+}
+ 
+</style>
+</head>
+<body>
+<div class="header">
+<div class="container">
+<div class="navbar">
+<div class="logo">
+<a href="index.html" name="home"> <img src="images/ash.jpg" width="170px"> </a>
+</div>
+<nav>
+<ul id="MenuItems">
+<li><a href="index.html">Home</a></li>
+<li><a href="phone.html">Contact us</a></li>
+<li><a href="rating.html">Ratings</a></li>
+<li><a href="payment.html">Payments</a></li>
+<li><a href="bookingrooms.html">Bookings</a></li>
+</ul>
+</nav>
+<div class="sign">
+<a href="login.html" name="login"> <img src="images/user1.png"> </a>
+</div>
+<div class="sign">
+<a href="Register.html" name="login"> <img src="images/logout.png"> </a>
+</div>
+</div>
+ 
+</div>
+</div>
+</div>
+<div class="align">
+
+
+<form class="for" method="post" name="myform">
+<div class="con">
+<!--	Start header Content  -->
+<header class="head-form">
+<h2>*----Log In	*</h2>
+<!--	A welcome message or an explanation of the login form -->
+<p><h4>Login here using your Username and Password</h4></p>
+</header>
+<br>
+<div class="field-set">
+
+
+<!--	user name -->
+<span class="input-item">
+<i class="fa fa-user-circle"></i>
+</span>
+<!--	user name Input-->
+<input class="form-input" id="us" type="text" placeholder="UserName" required>
+
+
+<br>
+
+
+<!--	Password -->
+ 
+<span class="input-item">
+<i class="fa fa-key"></i>
+</span>
+<!--	Password Input-->
+<input class="form-input" type="password" placeholder="Password" id="pass" name="password" required>
+
+
+<!--	Show/hide password -->
+<span>
+<i class="fa fa-eye" aria-hidden="true" type="button"
+id="eye"></i>
+</span>
+<br>
+<button><a href="Index.html" class="log-in" onclick="loginval()">Login</a></button>
+</div>
+<div class="other">
+<button class="btn submits frgt-pass">Forgot Password</button>
+<button class="btn submits sign-up"><a href="Registration.html">Sign Up</a></button>
+</div>
+</div>
+</form>
+</div>
+</body>
+</html>
