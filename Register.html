@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<link rel="stylesheet" href="Register.css" type="text/css">
+ 
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<script src="log1.js"></script>
+<title>Registration From</title>
+</head>
+
+
+<body>
+<div class="header">
+<div class="container">
+<div class="navbar">
+<div class="logo">
+<a href="index.html" name="home"> <img src="images/ash.jpg" width="170px"> </a>
+</div>
+<nav>
+<ul id="MenuItems">
+<li><a href="index.html">Home</a></li>
+<li><a href="phone.html">Contact us</a></li>
+<li><a href="rating.html">Ratings</a></li>
+<li><a href="payment.html">Payments</a></li>
+<li><a href="bookingrooms.html">Bookings</a></li>
+</ul>
+</nav>
+<div class="sign">
+<a href="login.html" name="login"> <img src="images/user1.png"> </a>
+</div>
+<div class="sign">
+ 
+<a href="login.html" name="login"> <img src="images/logout.png"> </a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="bg">
+
+
+</div>
+
+
+<div class="form">
+<h1><center><u>Registeration form</u></center></h1>
+<form id='registration' method="get">
+<table>
+<tr>
+
+
+</tr>
+<br>
+
+
+<tr>
+<td><label for="userid">User id:</label>
+<td><input type="text" id="userid" size="20">
+</tr>
+<tr>
+<td><label for="passid">Password:</label>
+<td><input type="password" id="passid" size="20">
+</tr>
+ 
+<tr>
+<td><label for="cpassid">Confirm Password:</label>
+<td><input type="password" id="cpassid" size="20">
+</tr>
+
+
+<tr>
+<td><label for="address">Permanent Address:</label>
+</tr>
+<tr>
+<td><label for="">Address line 1:</label></td>
+<td><input type="text" id="paddress1" size="30" name="paddress1"></td>
+</tr>
+<tr>
+<td><label for="">Address line 2:</label></td>
+<td><input type="text" id="paddress2" size="30" name="paddress2"></td>
+</tr>
+<tr>
+<td><label for="country">Country:</label>
+<td><select id="country">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">India</option>
+<option value="AL">China</option>
+<option value="DZ">Nepal</option>
+<option value="AS">Bhutan</option>
+<option value="AD">USA</option>
+ 
+<option value="AF">Sri Lanka</option>
+</select></td>
+</tr>
+<tr>
+<td><label for="zip">ZIP Code:</label>
+<td><input type="text" id="zip">
+</tr>
+<tr>
+<td><label for="email">Email:</label>
+<td><input type="text" id="email" size="30">
+</tr>
+<tr>
+<td><label id="gender">Gender:</label>
+<td><input type="radio" name="gender" value="Male" id="male"><label for="male">Male</label><br>
+<input type="radio" name="gender" value="Female" id="female"><label for="female">Female</label>
+</td>
+</tr>
+<tr> <td colspan="2" align="center">---------------------------------------
+ 	</td></tr>
+<tr></tr>
+<tr></tr>
+<br>
+<br>
+<tr>
+<td align=center><input type="button" id="submit" value="Submit" onclick="formValidation()"></td>
+<td align="center"><input type="reset" onclick="res()"></td>
+ 
+</tr>
+</table>
+</form>
+</div>
+</body>
+
+
+</html>
+
