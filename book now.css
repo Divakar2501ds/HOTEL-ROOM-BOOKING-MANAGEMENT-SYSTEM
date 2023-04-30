@@ -1,0 +1,171 @@
+body {
+background-color: #F9F3EE; margin: 0;
+padding: 0; overflow-x: hidden; margin-left: 0;
+}
+
+
+.navbar { display: flex;
+align-items: center; padding: 35px; width:100%
+}
+
+
+nav {
+flex: 1;
+text-align: left;
+
+
+}
+
+
+.logo a img {
+border-radius: 17px;
+}
+
+
+nav ul {
+ 
+display: inline-block; list-style: none;
+}
+
+
+nav ul li {
+display: inline-block; margin-right: 20px;
+}
+
+
+a {
+font-size:x-large;
+text-decoration: none; color: #555;
+color: rgb(242, 25, 25);
+}
+nav ul li a:hover { color: #151313; padding-right: 40px;
+}
+
+
+
+p {
+color: #555;
+}
+
+
+.container { width: 100%;
+ 
+margin: auto;
+
+
+}
+
+
+.row {
+display: flex;
+align-items: center; flex-wrap: wrap;
+justify-content: space-around;
+}
+
+
+.col-2 {
+flex-basis: 50%; min-width: 300px;
+}
+
+
+.col-2 img {
+max-width: 100%;
+padding: 50px 0;
+}
+
+
+.col-2 h1 {
+font-size: 50px; line-height: 60px; margin: 25px 0;
+}
+ 
+.btn {
+display: inline-block; background: #ff523b; color: #fff;
+padding: 8px 30px; margin: 30px 0; border-radius: 30px; transition: 0.5s;
+}
+
+
+.btn:hover { background: #563434;
+}
+
+
+.header {
+background: #F9F3EE;
+}
+
+
+.header .row { margin-top: 70px;
+}
+.sign a h1 {
+padding-right: 50px;
+}
+
+
+
+#order {
+ 
+position: relative; padding-top: 70px;
+}
+
+
+#order-box { display: flex;
+justify-content: center; align-items: center; padding-bottom: 34px;
+}
+
+
+#order-box label option { font-size: 30px;
+font-style: bold;
+
+
+}
+
+
+#order-box input, #order-box textarea {
+width: 100%; padding: 5px; border-radius: 9px; font-size: 20px;
+}
+
+
+#order::before { content: "";
+ 
+position: absolute; width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 10;
+background: url('../images/order.png') no-repeat center center/cover;
+}
+
+
+footer {
+background: black; color: white; padding: 9px 20px;
+}
+
+
+.h-primary {
+font-family: 'Bree Serif', serif; font-size: 30px;
+padding: 5px;
+}
+
+
+.h-secondary {
+font-family: 'Bree Serif', serif; font-size: 5px;
+padding: 12px;
+}
+
+
+.btn {
+ 
+padding: 6px 20px; margin-top: 10px; margin-left: 100px; border: 2px solid white;
+background-color: brown; color: white;
+font-size: 20px; border-radius: 10px; align-items: center; cursor: pointer;
+}
+
+
+.center {
+text-align: center;
+}
+
+
+form select, form input {
+display: block; width: 100%; margin: 15px 12px; padding: 5px;
+font-size: 15px;
+font-family: 'Poppins', sans-serif; font-weight: 300;
+}
