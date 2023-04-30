@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Order</title>
+ 
+<link rel="stylesheet" href="bookingrooms.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+
+
+<body>
+<div class="header">
+<div class="container">
+<div class="navbar">
+<div class="logo">
+<a href="index.html" name="home"><img src="images/ash.jpg" width="170px"></a>
+</div>
+<nav>
+<ul id="MenuItems">
+<li><a href="index.html">Home</a></li>
+<li><a href="phone.html">Contact us</a></li>
+<li><a href="rating.html">Ratings</a></li>
+<li><a href="payment.html">Payments</a></li>
+<li><a href="bookingrooms.html">Bookings</a></li>
+</ul>
+</nav>
+<div class="sign">
+<a href="login.html">
+<h1><i class="far fa-user-circle"></i></i></h1>
+</a>
+</div>
+<div class="sign">
+ 
+<a href="login.html">
+<h1><i class="fa fa-sign-out" aria-hidden="true"></i></h1>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+
+<section id="order">
+<h1 class="h-primary center">BOOK NOW</h1>
+<div id="order-box">
+<form id='registration' method="get">
+<div class="form-group">
+<label for="username">Name: </label>
+<input type="text" name="name" id="username" placeholder="Enter your name">
+</div>
+<div class="form-group">
+<label for="phone">Phone Number: </label>
+<input type="tel" id="phone" placeholder="Enter your phone">
+</div>
+<div class="form-group">
+<label for="paddress1">Address:</label>
+<textarea name="message" id="paddress1" placeholder="Enter your address" cols="5"
+rows="2"></textarea>
+</div>
+<br>
+ 
+<div class="form-group">
+<label for="quantity">How Members:</label>
+<input type="number" id="quantity" name="quantity" min="1"
+max="5">
+</div>
+<br>
+<label><b>Total Amount:</b></label>
+<input name="tot_amount" id="tot_amount" type="text">
+<div class="form-group">
+<label for="payment">Select your payment option:</label>
+<select name="payment" id="payment" required>
+<option value="select">Please select option</option>
+<option value="cash on delivery">Cash on delivery</option>
+<option value="credit card">Cedit card</option>
+<option value="debit card ">Debit card</option>
+<option value="UPI">UPI</option>
+</select>
+</div>
+
+
+<div>
+<button class="btn" onclick="booknow()">BOOK Now </button>
+</div>
+</form>
+</div>
+</section>
+
+
+<script>
+function booknow() {
+ 
+alert("Your Booking is Successful");
+}
+</script>
+</body>
+</html>
